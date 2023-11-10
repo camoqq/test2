@@ -34,8 +34,3 @@ const Home = async () => {
 };
 
 export default Home;
-//make
-//install
-// npm i json-server -g
-//use
-//json-server --watch --port 4000 ./_data/db.json
