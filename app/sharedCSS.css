@@ -9,20 +9,25 @@
 .nav {
   width: 15rem;
   background-color: rgb(59, 59, 159);
-  /* height: 95vh; */
   margin: 1rem 0 1rem 1rem;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  padding: 4rem 0 0 2rem;
+  align-items: center;
+  padding-top: 4rem;
   line-height: 4rem;
   color: white;
   font-size: 14px;
 }
 .nav a {
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 0;
+  border: 1px solid white;
+  padding: 1.3rem 1.3rem 0 1.3rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: white;
 }
 .link {
   display: flex;
@@ -30,8 +35,9 @@
   transition: 0.5s;
 }
 .link:hover {
-  color: rgb(153, 171, 221);
+  background-color: rgb(153, 171, 221);
   transition: 0.5s;
+  box-shadow: 3px 3px 1px white;
 }
 .link :nth-child(2) {
   margin: 0 0 4px 5px;
@@ -144,6 +150,7 @@ h1 {
   align-items: center;
   border: 0.5px solid black;
   border-radius: 8px;
+  box-shadow: 2px 2px 2px gray;
 }
 .p {
   text-decoration: none;
@@ -293,6 +300,7 @@ h1 {
   }
   .hide a {
     display: initial;
+    margin-bottom: 1rem;
   }
   .secondPage {
     width: 88%;
