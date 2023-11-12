@@ -7,13 +7,7 @@ import Chart from "./components/chart";
 import "./sharedCSS.css";
 import Minimenu from "./components/minimenu";
 
-export async function getData() {
-  const res = await fetch("https://6524d386ea560a22a4ea24ca.mockapi.io/data1");
-  return res.json();
-}
 const Home = async () => {
-  const users = await getData();
-
   return (
     <div className="container">
       <Head>
@@ -26,7 +20,7 @@ const Home = async () => {
       <div className="firstPage">
         <Minimenu />
         <h1>MEDICAL DASHBOARD</h1>
-        <Numbers users={users} />
+        <Numbers />
         <Chart />
       </div>
     </div>
